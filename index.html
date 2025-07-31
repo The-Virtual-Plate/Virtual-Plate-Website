@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Virtual Plate</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #ffd700;
+    }
+    header {
+      background-color: #111;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #ffd700;
+    }
+    header img {
+      height: 60px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+    nav a {
+      color: #ffd700;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: url('https://images.unsplash.com/photo-1606755962773-bc6d5d8d2c24?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      color: #fff;
+      background-attachment: fixed;
+    }
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+    }
+    .menu-item {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #ffd70055;
+    }
+    .menu-item h3 {
+      margin: 0;
+    }
+    .menu-item p {
+      font-size: 0.9em;
+      color: #aaa;
+    }
+    .order-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #ffd700;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .about, .contact {
+      background-color: #111;
+      border-radius: 10px;
+      padding: 30px;
+      margin-top: 40px;
+    }
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      border-top: 1px solid #ffd70044;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      color: #ffd700;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+    .header-container {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <img src="Logo.png" alt="The Virtual Plate Logo" />
+      <h1>The Virtual Plate</h1>
+    </div>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+<h2>When Cravings Call, We Deliver!</h2>
+<p>Pizza to Burger, Sandwich to French Fry – sob ready, just WhatsApp!</p>
+    <a href="https://wa.me/917439287414" class="order-btn" target="_blank">Order on WhatsApp</a>
+  </div>
+
+<section id="menu" class="menu-section">
+  <h2>Our Menu</h2>
+
+  <!-- PIZZA CATEGORY -->
+  <div class="menu-category">
+    <h3>Pizza</h3>
+    <ul>
+      <li><strong>Cheesy Corn Fusion</strong> (Regular ₹119 / Medium ₹189)<br><small>Loaded with cheesy corn, perfect for mild spice lovers.</small></li>
+      <li><strong>Margherita</strong> (Regular ₹109 / Medium ₹179)<br><small>Classic cheese pizza with rich tomato base and herbs.</small></li>
+      <li><strong>Crunchy Chicken Bomb</strong> (Regular ₹129 / Medium ₹199)<br><small>Juicy chicken chunks with a crunchy twist.</small></li>
+      <li><strong>Spicy Crunchy Chicken Bomb</strong> (Regular ₹139 / Medium ₹209)<br><small>Hot and crispy chicken bites with bold flavors.</small></li>
+      <li><strong>Chicken Tikki</strong> (Regular ₹149 / Medium ₹219)<br><small>Indian-style tikki topped chicken pizza delight.</small></li>
+      <li><strong>Namaste Peppironi</strong> (Regular ₹139 / Medium ₹209)<br><small>Desi take on the classic pepperoni with a twist.</small></li>
+      <li><strong>Dhamaka</strong> (Regular ₹199 / Medium ₹299)<br><small>Ultimate explosion of flavors with multiple toppings.</small></li>
+    </ul>
+    <p><strong>Add-ons:</strong> Cheese Burst ₹40 | Extra Mozzarella ₹40 | Non-Veg Toppings ₹50</p>
+  </div>
+
+  <!-- BURGER CATEGORY -->
+  <div class="menu-category">
+    <h3>Burger</h3>
+    <ul>
+      <li><strong>Veggie Burger</strong> ₹79<br><small>Fresh and crispy veg patty with creamy sauces.</small></li>
+      <li><strong>Aloo Tikki Burger</strong> ₹89<br><small>Desi favorite with spicy aloo tikki inside.</small></li>
+      <li><strong>Crunchy Chicken Burger</strong> ₹129<br><small>Golden crispy chicken with fresh veggies.</small></li>
+      <li><strong>Spicy Crunchy Chicken Burger</strong> ₹139<br><small>Fiery twist on the classic chicken crunch.</small></li>
+      <li><strong>Chicken Tikki Burger</strong> ₹159<br><small>Flavorful chicken tikki with soft bun.</small></li>
+    </ul>
+    <p><strong>Add-on:</strong> Extra Cheese Slice ₹40</p>
+  </div>
+
+  <!-- SANDWICH CATEGORY -->
+  <div class="menu-category">
+    <h3>Sandwich</h3>
+    <ul>
+      <li><strong>Cheesy Veggie Sandwich</strong> ₹89<br><small>Cheesy layers with crunchy veggies in every bite.</small></li>
+      <li><strong>Cheesy Corn Blast Sandwich</strong> ₹149<br><small>Corn and cheese overload, grilled to perfection.</small></li>
+      <li><strong>Cheesy Chicken Sandwich</strong> ₹169<br><small>Grilled chicken and gooey cheese for meat lovers.</small></li>
+    </ul>
+    <p><strong>Add-on:</strong> Extra Cheese ₹40</p>
+  </div>
+
+  <!-- EXTRA CATEGORY -->
+  <div class="menu-category">
+    <h3>Extra</h3>
+    <ul>
+      <li><strong>Salted French Fries</strong> ₹99<br><small>Classic fries with light seasoning.</small></li>
+      <li><strong>Masala French Fries</strong> ₹109<br><small>Indian-style spiced fries for extra zing.</small></li>
+      <li><strong>Butter Masala Corn</strong> ₹99<br><small>Sweet corn tossed in butter and masala mix.</small></li>
+    </ul>
+  </div>
+</section>
+
+<section id="about" style="padding: 2rem; background-color: #000000; color: #FFD700;">
+  <div style="max-width: 800px; margin: auto; text-align: center;">
+    <h2 style="font-size: 2rem; margin-bottom: 1rem;">🍽️ About <span style="color: #e67e22;">The Virtual Plate</span></h2>
+
+    <p style="font-style: italic; line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+      In the heart of the city, where hunger wakes late,<br>
+      There sizzles a kitchen — <strong>The Virtual Plate</strong>.<br>
+      No doors, no chairs, no dine-in scene,<br>
+      Just magic served on a glowing screen.<br><br>
+
+      A swirl of cheese, a burger's embrace,<br>
+      Spices that dance, flavours that race.<br>
+      From crispy bites to buttery corn rain,<br>
+      We serve joy — not just food, but gain.<br><br>
+
+      Crafted with love, in silence we cook,<br>
+      While you scroll menus like reading a book.<br>
+      For midnight cravings or no-time days,<br>
+      We deliver warmth in countless ways.<br><br>
+
+      So tap, order, and sit back tight —<br>
+      We’ll bring the feast, hot and right.<br>
+      This isn’t a kitchen behind a gate...<br>
+      It’s your soul’s flavour stop — <strong>The Virtual Plate</strong>.
+    </p>
+
+    <hr style="margin: 2rem auto; width: 60%; border: 0; border-top: 1px dashed #ccc;">
+
+    <h2 style="font-size: 2rem; margin-bottom: 1rem;">🍽️ আমাদের কথা — <span style="color: #e67e22;">The Virtual Plate</span></h2>
+
+    <p style="font-style: italic; line-height: 2; font-size: 1.1rem;">
+      শহরের বুকে, রাত জেগে খিদে যখন জাগে,<br>
+      চুপিসারে রান্না করে একটি ঘর — <strong>The Virtual Plate</strong> নাম তার লাগে।<br>
+      না আছে টেবিল, না আছে চেয়ার,<br>
+      তবু রান্না জানে মন ছোঁয়া ফেয়ার।<br><br>
+
+      চিজের গন্ধ, বার্গারের জড়ানো আদর,<br>
+      মশলার নাচন, স্বাদের হুড়োহুড়ি – দারুণ আকার।<br>
+      ক্রিস্পি এক কামড়ে, মাখনের মত কন,<br>
+      দেই শুধু খাবার নয় — দিই সুখের বোন।<br><br>
+
+      ভালোবাসায় রাঁধা, নিঃশব্দে সব,<br>
+      তুমি মেনু স্ক্রল করো, আমরা দিই রসের রব।<br>
+      মধ্যরাত হোক, বা ব্যস্ত দুপুর,<br>
+      আমরা পৌঁছে দিই স্বাদ – চুপচাপ, গুরুর!<br><br>
+
+      তাই শুধু একটা ট্যাপ করো, বসে পড়ো আরাম,<br>
+      গরম খাবার যাবে তোমার দোরগোড়ায় ঠিক ঠিক নাম।<br>
+      এটা শুধুই রান্নাঘর নয় কোনো গেটে,<br>
+      এটা তোমার স্বাদের ঠিকানা — <strong>The Virtual Plate-এ</strong>।
+    </p>
+  </div>
+</section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📍 16/2H, Dover Terrace, Kolkata-700019</p>
+    <p>📞 <a href="tel:+917439287414" style="color:#ffd700;">7439287414</a></p>
+    <p>💬 <a href="https://wa.me/917439287414" target="_blank" class="order-btn">Chat on WhatsApp</a></p>
+    <p>📧 Email: <a href="mailto:thevirtualplate@gmail.com">thevirtualplate@gmail.com</a></p>
+  </section>
+
+<footer>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/share/1CVfMdcJPu/" target="_blank">
+      <img src="facebook.png" alt="Facebook" width="24" style="vertical-align: middle;"> Facebook
+    </a>
+    &nbsp; &nbsp;
+    <a href="https://www.instagram.com/the_virtual_plate?igsh=MTJyNGsydDIxMHNpOA==" target="_blank">
+      <img src="instagram.png" alt="Instagram" width="24" style="vertical-align: middle;"> Instagram
+    </a>
+  </div>
+  <p>© 2025 The Virtual Plate. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
